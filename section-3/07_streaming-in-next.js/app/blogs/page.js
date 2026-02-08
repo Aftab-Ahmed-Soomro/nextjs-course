@@ -48,15 +48,7 @@ const Blogs = () => {
         </ol>
         <div className="blog-links">
           <br />
-          <Suspense fallback={<Loading>Views</Loading>}>
-            <Views />
-          </Suspense>
-          <Suspense fallback={<Loading>Likes</Loading>}>
             <Likes />
-          </Suspense>
-          <Suspense fallback={<Loading>Comments</Loading>}>
-            <Comments />
-          </Suspense>
         </div>
       </div>
     </>
